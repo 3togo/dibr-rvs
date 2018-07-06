@@ -71,6 +71,7 @@ if __name__ == "__main__":
             args.depth = args.dir
     if args.rig is not None:
         s = json.load(args.rig)
+        print(s.keys())
         x0, xs = s["xs"]
         y0, ys = s["ys"]
         xvec = np.array(s['translation_x'])
