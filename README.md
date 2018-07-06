@@ -2,6 +2,7 @@ To calculate the gammas (the dissimilarities between synthesized and original im
 
 ```bash
 sudo apt install libfftw3-dev
+sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran  
 sudo -H python -m pip install openexr theano imutils phasepack pyfftw 
 python gammas.py --rig blender_data/cameraSettings.json --rgb blender_data --depth blender_data --out blender_output --outfile blender_output/gammas.csv --method dibr
 ```
